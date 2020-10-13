@@ -1,11 +1,5 @@
 from django.db import models
-# Create your models here.
-
-
-class User(models.Model):
-    creationDate = models.DateTimeField(auto_now_add=True)
-    login = models.CharField(max_length=200, unique=True)
-    password = models.TextField()
+from django.contrib.auth.models import User
 
 
 class Session(models.Model):
